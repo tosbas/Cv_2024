@@ -1,0 +1,40 @@
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    display: flex;
+}
+
+#section-qualite-humaines ul li {
+    list-style-type: "❖";
+}
+
+#section-competences-techniques ul li,
+#section-qualite-humaines ul li {
+    padding: 5px;
+}
+
+
+#section-competences-techniques ul li {
+    list-style-type: "✓";
+}
+
+#container-info-general {
+    background-color: #006db1;
+    width: 70%;
+    padding: 10px;
+    color: #ffffff;
+}
+
+#container-info-perso-competences {
+
+    background-color: #da7000;
+    width: 30%;
+    padding: 10px;
+    color: #ffffff;
+
+}
