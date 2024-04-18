@@ -1,40 +1,138 @@
 body {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
+    height: 100vh;
+    background-color: #f5f5f5;
+    color: #333;
+    margin: 20px;
 }
 
 main {
     display: flex;
 }
 
-#section-qualite-humaines ul li {
-    list-style-type: "❖";
+a {
+    text-decoration: none;
 }
 
-#section-competences-techniques ul li,
-#section-qualite-humaines ul li {
-    padding: 5px;
+h2 {
+    text-align: center;
+    border: 1px solid #333;
+    padding: 10px;
+    font-size: 20px;
+    background-color: #006db1;
+    color: #fff;
+    border-radius: 5px;
 }
 
+#section-projet {
+    text-align: center;
+    padding: 10px;
+}
 
-#section-competences-techniques ul li {
-    list-style-type: "✓";
+ul {
+    padding: 0;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+#section-links ul {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+#image-moi {
+    width: 250px;
+    height: 200px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
 }
 
 #container-info-general {
-    background-color: #006db1;
+    background-color: #fff;
     width: 70%;
+    padding: 20px;
+    margin-right: 5px;
+    color: #333;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.1);
+    flex-direction: column;
+}
+
+#container-info-general h2 {
+    background-color: #006db1;
     padding: 10px;
-    color: #ffffff;
+    margin-top: 0;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+#container-info-perso-competences h2 {
+    background-color: #006db1;
+    padding: 10px;
+    margin-top: 0;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
 #container-info-perso-competences {
+    text-align: center;
+}
 
-    background-color: #da7000;
+#container-info-perso-competences {
+    background-color: #fff;
     width: 30%;
-    padding: 10px;
-    color: #ffffff;
+    padding: 20px;
+    margin-left: 5px;
+    color: #333;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.1);
+    flex-direction: column;
+}
 
+
+.card {
+    background-color: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.card {
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateX(-10px);
+}
+
+
+#logiciels-environnements .card,
+#section-competences-techniques .card,
+#section-qualite-humaines .card {
+    padding: 10px;
+    margin: 10px;
+}
+
+#github-projets>a {
+    display: block;
+    margin: 20px;
+}
+
+@media screen and (max-width: 1000px) {
+    main {
+        display: block;
+    }
+
+    #container-info-general,
+    #container-info-perso-competences {
+        margin: 10px auto;
+        width: auto;
+    }
 }
